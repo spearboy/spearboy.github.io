@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: Spearboy's Blog # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: 나를 위한 공부 # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   개발자로 성장하기 위한 나의 공간.
