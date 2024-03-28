@@ -4,8 +4,10 @@
 
 /* sidebar */
 
-$sidebar-width: 260px !default; /* the basic width */
-$sidebar-width-large: 300px !default; /* screen width: >= 1650px */
+$sidebar-width: 260px !default;
+/* the basic width */
+$sidebar-width-large: 300px !default;
+/* screen width: >= 1650px */
 $sb-btn-gap: 0.8rem !default;
 $sb-btn-gap-lg: 1rem !default;
 
@@ -14,7 +16,8 @@ $sb-btn-gap-lg: 1rem !default;
 $topbar-height: 3rem !default;
 $search-max-width: 200px !default;
 $footer-height: 5rem !default;
-$footer-height-large: 6rem !default; /* screen width: < 850px */
+$footer-height-large: 6rem !default;
+/* screen width: < 850px */
 $main-content-max-width: 1250px !default;
 $base-radius: 0.625rem !default;
 $back2top-size: 2.75rem !default;
@@ -28,6 +31,12 @@ $code-dot-gap: 0.5rem !default;
 $code-icon-width: 1.75rem !default;
 
 /* fonts */
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-$font-family-base: 'Source Sans Pro', 'Microsoft Yahei', sans-serif !default;
-$font-family-heading: Lato, 'Microsoft Yahei', sans-serif !default;
+$font-family-base: 'NanumSquareRound', 'Microsoft Yahei', sans-serif !default;
+$font-family-heading: 'NanumSquareRound', 'Microsoft Yahei', sans-serif !default;
