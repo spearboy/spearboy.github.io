@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 프로그래머스 LV1 
+title: 프로그래머스 LV0 
 date: 2024-03-29 09:44 +0900
 description: 
 image: ../assets/img/programmers_logo.png
