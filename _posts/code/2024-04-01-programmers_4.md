@@ -28,7 +28,7 @@ sitemap: true
 
   
   여기서 저희는 이전 포스팅에서 연산자에 대해 알아봤던걸 기억하실겁니다.
-  설명은 이전 포스팅인 [연산자](https://spearboy.github.io/posts/programmers_3/#%EC%97%B0%EC%82%B0%EC%9E%90)에서 확인 가능합니다.
+  설명은 이전 포스팅인 [연산자](https://spearboy.github.io/posts/programmers_3#연산자)에서 확인 가능합니다.
 
   나머지 연산자를 활용하여 문제를 풀어보도록 하겠습니다.
 

@@ -39,7 +39,7 @@ function solution(num1, num2) {
 우선 함수안에 매개변수로 num1,num2가 있습니다. 출제자가 해당 매개변수에 임의의 값을 넣어주면
 함수의 리턴 값으로 답을 알려주면 되는 간단한 코드 입니다.
 
-[매개변수](https://spearboy.github.io/posts/first-blog-post/#%EC%97%AC%EA%B8%B0%EC%84%9C-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EB%9E%80)의 설명은 이전 포스팅을 참고해주세요.
+[매개변수](https://spearboy.github.io/posts/programmers_1/#여기서-매개변수란)의 설명은 이전 포스팅을 참고해주세요.
 
 ### 연산자
 오늘은 바로 시도를 해보기 전에 간단한 연산자에 대해서 설명을 드리도록 하겠습니다.
