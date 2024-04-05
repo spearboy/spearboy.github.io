@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 프로그래머스 LV0 "숫자 비교하기"
-date: 2024-04-02 14:48 +0900
+date: 2024-04-02 16:48 +0900
 description: 
 image: ../assets/img/programmers_logo.png
 category: code

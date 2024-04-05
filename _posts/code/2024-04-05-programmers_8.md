@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 프로그래머스 LV0 "배열의 평균값"
-date: 2024-04-04 14:42 +0900
+date: 2024-04-05 07:26 +0900
 description: 
 image: ../assets/img/programmers_logo.png
 category: code
