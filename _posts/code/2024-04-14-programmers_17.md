@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 프로그래머스 LV0 "중앙값 구하기"
-date: 2024-04-11 23:54 +0900
+date: 2024-04-11 21:55 +0900
 description: 
 image: ../assets/img/programmers_logo.png
 category: code
@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 열일곱번째 문제 '중앙값 구하기' 문제입니다.
 
-  ![프로그래머스 이미지](../assets/img/머슥이_01.png)
+  ![프로그래머스 이미지](../assets/img/중앙값구하기_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
