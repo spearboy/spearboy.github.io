@@ -49,47 +49,47 @@ function solution(array, height) {
 ### forEach()
 forEach() 메서드는 배열의 각 요소에 대해 제공된 함수를 한 번씩 실행하는 배열 메서드입니다. 이를 사용하는 이유는 다음과 같습니다.
   1. 가독성과 간결성: forEach()는 코드를 간결하고 읽기 쉽게 만듭니다. for 루프를 사용하는 대신 forEach()를 사용하면 코드가 더 짧아지고 더 명확해집니다.
-    + ```javascript
-      // for 루프를 사용한 예시
-      const numbers = [1, 2, 3, 4, 5];
-      for (let i = 0; i < numbers.length; i++) {
-        console.log(numbers[i]);
-      }
+```javascript
+// for 루프를 사용한 예시
+const numbers = [1, 2, 3, 4, 5];
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);
+}
 
-      // forEach()를 사용한 예시
-      const numbers = [1, 2, 3, 4, 5];
-      numbers.forEach(function(number) {
-        console.log(number);
-      });
-      ```
+// forEach()를 사용한 예시
+const numbers = [1, 2, 3, 4, 5];
+numbers.forEach(function(number) {
+  console.log(number);
+});
+```
   2. 배열 요소에 대한 반복 작업: forEach()를 사용하면 배열의 각 요소에 대해 반복 작업을 수행할 수 있습니다. 이는 배열을 반복하면서 각 요소에 대해 동일한 작업을 수행해야 할 때 매우 유용합니다.
-    + ```javascript
-      const numbers = [1, 2, 3, 4, 5];
-      numbers.forEach(function(number) {
-        console.log(number * 2); // 각 요소를 2배로 곱하여 출력
-      });
-      ```
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+numbers.forEach(function(number) {
+  console.log(number * 2); // 각 요소를 2배로 곱하여 출력
+});
+```
   3. 인라인 함수 사용: forEach()를 사용하면 인라인 함수를 쉽게 작성할 수 있습니다. 인라인 함수를 사용하면 반복 작업을 보다 간단하게 처리할 수 있습니다.
-    + ```javascript
-      const numbers = [1, 2, 3, 4, 5];
-      numbers.forEach(number => console.log(number * 2)); // 화살표 함수를 사용하여 인라인 함수 작성
-      ```
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+numbers.forEach(number => console.log(number * 2)); // 화살표 함수를 사용하여 인라인 함수 작성
+```
   4. 콜백 함수 사용: forEach()의 인자로 전달되는 콜백 함수는 각 배열 요소에 대해 실행됩니다. 이는 forEach()를 사용하여 다양한 작업을 수행할 수 있다는 것을 의미합니다.
-    + ```javascript
-      const numbers = [1, 2, 3, 4, 5];
-      numbers.forEach(function(number, index, array) {
-        console.log(`Index: ${index}, Value: ${number}`); // 각 요소와 해당 인덱스 출력
-      });
-      ```
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+numbers.forEach(function(number, index, array) {
+  console.log(`Index: ${index}, Value: ${number}`); // 각 요소와 해당 인덱스 출력
+});
+```
   5. 배열 변경 및 사이드 이펙트: forEach()를 사용하면 배열을 변경할 수 있으며, 이는 map()과는 다릅니다. 만약 단순히 배열의 요소를 반복하면서 작업을 수행하고자 할 때라면 forEach()가 적합한 선택입니다.
-    + ```javascript
-      const numbers = [1, 2, 3, 4, 5];
-      const doubledNumbers = [];
-      numbers.forEach(function(number) {
-        doubledNumbers.push(number * 2); // 각 요소를 2배로 곱하여 새 배열에 추가
-      });
-      console.log(doubledNumbers); // [2, 4, 6, 8, 10]
-      ```
+```javascript
+const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = [];
+numbers.forEach(function(number) {
+  doubledNumbers.push(number * 2); // 각 요소를 2배로 곱하여 새 배열에 추가
+});
+console.log(doubledNumbers); // [2, 4, 6, 8, 10]
+```
 
 이렇게 `forEach`에 대해 한번 알아봤습니다. 위에서 말한것과 같이 저는 주로 1번의 이유때문에 `forEach`를 사용합니다.
 
