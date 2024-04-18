@@ -57,7 +57,7 @@ function solution(s){
   ```
 
   2. 문자열에서 `length`
-  
+
   ```javascript
   const str = 'Hello, World!';
   console.log(str.length); // 출력: 13

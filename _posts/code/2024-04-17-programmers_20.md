@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 스무번째 문제 '옷가게 할인 받기' 문제입니다.
 
-  ![프로그래머스 이미지](../assets/img/옷가게할인받기_01.png)
+  ![프로그래머스 이미지](../assets/img/옷가게할인받기_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -52,7 +52,8 @@ function solution(price) {
 
 예를 들어, 100의 20%를 계산해보겠습니다.
 
-1. 소수를 이용한 방법: 100 × 0.20 = 20   
+1. 소수를 이용한 방법: 100 × 0.20 = 20
+
 ```javascript
 var number = 100; // 주어진 수
 var percentage = 0.20; // 백분율을 소수로 표현
@@ -63,7 +64,8 @@ var result = number * percentage;
 console.log(result); // 결과는 20입니다.
 ```
 
-2. 분수를 이용한 방법: 100 × $\frac{20}{100}$ = 20   
+2. 분수를 이용한 방법: 100 × $\frac{20}{100}$ = 20
+
 ```javascript
 var number = 100; // 주어진 수
 var percentage = 20; // 백분율을 정수로 표현
@@ -74,7 +76,8 @@ var result = number * (percentage / 100);
 console.log(result); // 결과는 20입니다.
 ```
 
-3. 백분율 공식: $\frac{20}{100}$ × 20 = 20   
+3. 백분율 공식: $\frac{20}{100}$ × 20 = 20
+
 ```javascript
 var number = 100; // 주어진 수
 var percentage = 20; // 백분율을 정수로 표현
@@ -128,7 +131,7 @@ function solution(price) {
 ``` 
 그럼 이제 코드가 완성되었으니 위 코드로 프로그래머스에서 결과를 확인해 보겠습니다.
 
-![프로그래머스 이미지](../assets/img/옷가게할인받기_02.png)
+![프로그래머스 이미지](../assets/img/옷가게할인받기_02.png)
 
 성공이네요!
 
