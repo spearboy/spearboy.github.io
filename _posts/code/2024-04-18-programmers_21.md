@@ -44,6 +44,7 @@ function solution(s){
   javascript에서 `length`는 배열이나 문자열에 포함된 요소의 개수를 나타냅니다. 다음은 각각의 사용 방법에 대한 간단한 설명입니다
 
   1. 배열에서 `length`
+
   ```javascript
   const fruits = ['apple', 'banana', 'orange'];
   console.log(fruits.length); // 출력: 3
@@ -56,6 +57,7 @@ function solution(s){
   ```
 
   2. 문자열에서 `length`
+  
   ```javascript
   const str = 'Hello, World!';
   console.log(str.length); // 출력: 13
