@@ -14,7 +14,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: ByungHyun # the main title
+title: Spearboy # the main title
 
 tagline: 나의 공간
 
@@ -34,8 +34,8 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: ChoByungHyun
-  email: spearboy@naver.com # change to your email address
+  name: Spearboy
+  email: tsagaanaa123@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/spearboy # change to your twitter homepage
