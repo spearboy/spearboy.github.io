@@ -41,6 +41,7 @@ function solution(s){
   그럼 바로 코드를 우선 문자열의 길이를 알아야하닌 `length`를 사용해 길이를 알아보겠습니다.
 
   ### length
+  
   javascript에서 `length`는 배열이나 문자열에 포함된 요소의 개수를 나타냅니다. 다음은 각각의 사용 방법에 대한 간단한 설명입니다
 
   1. 배열에서 `length`
