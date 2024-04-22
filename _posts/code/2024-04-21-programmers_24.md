@@ -6,8 +6,8 @@ description:
 image: ../assets/img/programmers_logo.png
 category: code
 tags: code lv1 programmers javascript
-published: false
-sitemap: false
+published: true
+sitemap: true
 ---
 
 # 프로그래머스 Lv1 자릿수 더하기
