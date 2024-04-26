@@ -54,8 +54,7 @@ layout: compress
               {% include {{ _include_path }} lang=lang %}
             {% endfor %}
 
-            {% include_cached footer.html lang=lang %}
-            <div style="padding-bottom: 100px;">
+            <div>
               <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2150648959498249"
                 crossorigin="anonymous"></script>
               <script src="https://giscus.app/client.js"
@@ -75,6 +74,7 @@ layout: compress
               </script>
               
             </div>
+            {% include_cached footer.html lang=lang %}
           </div>
         </div>
 
