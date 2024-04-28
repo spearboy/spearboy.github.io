@@ -1,31 +1,31 @@
 ---
 layout: post
 title: 프로그래머스 LV1 "수박수박수박수박수박수?"
-date: 2024-04-25 18:10 +0900
+date: 2024-04-26 19:20 +0900
 description: 
 image: ../assets/img/programmers_logo.png
 category: code
 tags: code lv1 programmers javascript
-published: false
-sitemap: false
+published: true
+sitemap: true
 ---
 
-# 프로그래머스 Lv1 정수 내림차순으로 배치하기
+# 프로그래머스 Lv1 수박수박수박수박수박수?
 
   기초부터 다시 공부를 하기위해 [프로그래머스](https://programmers.co.kr/) 라는 사이트에서
   코딩테스트를 LV0 부터 가능한곳까지 못하는곳은 레퍼런스를 찾아가며 풀어보려고 합니다.
   
   매일 1개의 풀이를 하고 그 풀이에대한 나의 생각 및 해석을 적어보려합니다.
 
-  오늘은 LV1 여덟번째 문제 '정수 내림차순으로 배치하기' 문제입니다.
+  오늘은 LV1 아홉번째 문제 '수박수박수박수박수박수?' 문제입니다.
 
-  ![프로그래머스 이미지](../assets/img/수박수박수박수박수박수_01.png)
+  ![프로그래머스 이미지](../assets/img/수박수박_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
-  문제는 매개변수로 정수 `n`이 주어지면 `n`의 각 자릿수를 내림차순으로 정렬하는 문제입니다.
+  문제는 매개변수로 정수 `n`이 길이로 주어지면 그 `n`의 길이 만큼 문자열을 출력하는 문제입니다.
 
-  오늘 문제에서는 간단한 메서드들로 문제를 해결해 보겠습니다.
+  오늘 문제에서는 간단한 반복문과 조건문으로 문제를 해결해 보겠습니다.
 
   그럼 오늘의 문제를 한번 풀어보겠습니다.
 
@@ -33,115 +33,72 @@ sitemap: false
   
 ```javascript
 function solution(n) {
-  var answer = 0;
+  var answer = '';
   return answer;
 }
 ```
 
-기본 세팅코드는 간단하게 정수`n`을 입력하면 각 자릿수의 숫자를 내림차순으로 정렬하는 문제입니다. 예를 들어 174963 이라면 976431을 반환해야합니다.
+기본 세팅 코드는 간단하게 `n`라는 매개변수를 전달하며 함수 내에 `answer`변수를 선언해 리턴하는 기본적인 함수의 형태입니다.
 
-그럼 코드로 한번 제가 말한것들을 옮겨보겠습니다.
+이 기본 함수에 이번 문제의 핵심인 "수" 와 "박" 문자열을 반복해 출력하는 것입니다. 예를 들어 매개변수 `n`이 4라면 "수박 수박"을 출력해야 하고, 5라면 "수박 수 박수"를 출력해야 합니다.
 
-우선 오늘 사용할 함수중 처음 써보는 `parseInt()`함수를 설명하고 문제를 풀어보도록 하겠습니다.
-
-### parseInt()
-`parseInt()`는 JavaScript에서 문자열을 정수로 변환하는 함수입니다. 이와 유사한 다른 함수들로는 `parseFloat()`가 있습니다. `parseInt()`는 문자열을 정수로 변환하는 데 사용되고, `parseFloat()`는 문자열을 부동 소수점 숫자로 변환하는 데 사용됩니다. 오늘은 `parseInt()`만 알아보도록 하겠습니다.
-
-`parseInt()`는 JavaScript에서 문자열을 숫자로 변환할 때 자주 사용됩니다. 문자열을 숫자로 변환할 때 주의할 점은 문자열이 숫자로 시작해야 한다는 것입니다. 그렇지 않으면 NaN(Not a Number)이 반환될 수 있습니다.
-+ 예
-  + ```javascript
-      parseInt("123"); // 123
-      parseFloat("3.14"); // 3.14
-    ```
-+ 예
-  + ```javascript
-      parseInt("hello"); // NaN
-      parseFloat("3.14hello"); // 3.14
-    ```
-
-이렇게 간단하게 `parseInt()`에 대해 알아보았습니다. 그럼 다시 문제를 풀어보도록 하겠습니다.
+여기서 우선 알 수 있는 방법은 매개변수의 수만큼 반복해야 한다는 것입니다.
 
 ```javascript
 function solution(n) {
-  var answer = 0;
-  var string = String(n);
+  var answer = '';
+  for(let i = 1; i<=n; i++){
+    console.log(i)
+  }
   return answer;
 }
 ```
+반복을 코드로 작성해 보면 이렇게 될 것입니다. 저는 문자열의 자연수만으로 반복을 실행하기 위해 반복문의 변수값인 `i`에 1을 담아주었습니다.
 
-우선 저는 위 코드와 같이 매개변수 `n`을 `string`이라는 변수에 `String()`함수를 사용해 문자열로 담아주었습니다. 이유는 문자열로 변환된 `n`을 문자열로 분리하기 위해서 입니다.
+이렇게 반복문을 작성해 보았습니다. 물론 출력 결과도 매개변수 `n`이 4라면 1,2,3,4가 나올 것입니다. 여기서 저희는 한 가지를 더 알 수 있습니다. 바로 짝수와 홀수를 이용해 문자열을 추가할 수 있다는 것입니다.
+
+홀수와 짝수를 알 수 있는 방법은 이전에도 많이 사용했었던 나머지 연산자입니다. 바로 코드로 작성해 보겠습니다.
 
 ```javascript
 function solution(n) {
-  var answer = 0;
-  var string = String(n);
-  var array = string.split("");
+  var answer = '';
+  for(let i = 1; i<=n; i++){
+    if(i%2 == 0){
+      answer+="박";
+    }else {
+      answer+= "수";
+    }
+  }
   return answer;
 }
 ```
+이렇게 나머지 연산자로 만약 해당 반복 루프의 `i`값을 2로 나눈 나머지 값이 0이라면 짝수임으로 "박"을 변수인 `answer`에 `+=`연산자로 문자열을 추가시켜주고, 해당 반복 루프의 `i`값을 2로 나눈 나머지 값이 0이아니라면 홀수임으로 "수"를 변수인 `answer`에 `+=`연산자로 문자열을 추가시켜 주었습니다.
 
-이번에는 문자열인 `string`변수를 `split()`메서드를 이용해 `array`라는 변수에 배열로 변환해 다시 담아 주었습니다.
+이렇게 완성된 코드에 매개변수를 한번 넣어서 테스트를 해보면 문제에서 원하는 답인 매개변수의 입력한 숫자만큼의 문자열이 반복되어 출력되는 것을 보실 수 있습니다.
 
-```javascript
-function solution(n) {
-  var answer = 0;
-  var string = String(n);
-  var array = string.split("");
-  array.sort();
-  return answer;
-}
-```
-
-이번 문제의 첫번째 핵심 정렬입니다. `sort()`메서드를 이용해 오름차순으로 정렬을 해주었습니다.
+다시한번 완성된 코드를 보여드리도록 하겠습니다.
 
 ```javascript
 function solution(n) {
-  var answer = 0;
-  var string = String(n);
-  var array = string.split("");
-  array.sort();
-  array.reverse();
-  return answer;
-}
-```
-
-이번 문제의 두번째 핵심 정렬입니다. `reverse()`메서드를 이용해 오름차순으로 정렬된 배열을 뒤집어주면 내림차순이 될것입니다.
-
-```javascript
-function solution(n) {
-  var answer = 0;
-  var string = String(n);
-  var array = string.split("");
-  array.sort();
-  array.reverse();
-  answer = parseInt(array.join(""));
-  return answer;
-}
-```
-
-마지막으로 `join()`으로 다시 합친 `array`를 `parseInt()`으로 정수로 다시 변환해주어 `answer`변수에 담아주면 다시 내림차순으로 변환된 정수를 반환 할 것입니다. 
-
-완성된 코드를 다시 한번 보여드리겠습니다.
-
-```javascript
-function solution(n) {
-  var answer = 0;
-  var string = String(n);
-  var array = string.split("");
-  array.sort();
-  array.reverse();
-  answer = parseInt(array.join(""));
+  var answer = '';
+  for(let i = 1; i<=n; i++){
+    if(i%2 == 0){
+      answer+="박";
+    }else {
+      answer+= "수";
+    }
+  }
   return answer;
 }
 ```
 
 문제의 식이 완성되었으니 프로그래머스에 한번 확인해보겠습니다.
 
-![프로그래머스 이미지](../assets/img/정수내림차순으로배치하기_02.png)
+![프로그래머스 이미지](../assets/img/수박수박_02.png)
 
 성공이네요!
 
-오늘은 [프로그래머스](https://programmers.co.kr/) LV1 '정수 내림차순으로 배치하기' 문제의 대해서 알아봤습니다.
+오늘은 [프로그래머스](https://programmers.co.kr/) LV1 '수박수박수박수박수박수?' 문제의 대해서 알아봤습니다.
 
 제 방법이 꼭 정답은 아니니 그저 이런방법도 있구나하고 참고용으로만 봐주시면 감사하겠습니다.
 
