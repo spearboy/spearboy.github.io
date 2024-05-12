@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 일곱번째 문제 '두 수의 합' 문제입니다.
 
-  ![프로그래머스 이미지](/assets/img/두수의합_01.png)
+  ![프로그래머스 이미지](https://spearboy.github.io/assets/img/두수의합_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -63,7 +63,7 @@ console.log(solution(10,10))
 
 이제 원하는 결과가 나오고 함수가 원하는대로 작동하니 프로그래머스에서 결과를 확인해 보겠습니다.
 
-![프로그래머스 이미지](/assets/img/두수의합_02.png)
+![프로그래머스 이미지](https://spearboy.github.io/assets/img/두수의합_02.png)
 
 성공이네요!
 

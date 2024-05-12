@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 다섯번째 문제 '숫자 비교하기' 문제입니다.
 
-  ![프로그래머스 이미지](/assets/img/숫자비교하기_01.png)
+  ![프로그래머스 이미지](https://spearboy.github.io/assets/img/숫자비교하기_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -83,7 +83,7 @@ else는 조건문이 거짓이라면 즉, 조건과 맞지 않으면 answer에 2
 
 결과는 원하는대로 나왔으니 한번 제출해보도록 하겠습니다.
 
-![프로그래머스 이미지](/assets/img/숫자비교하기_02.png)
+![프로그래머스 이미지](https://spearboy.github.io/assets/img/숫자비교하기_02.png)
 
 성공이네요!
 

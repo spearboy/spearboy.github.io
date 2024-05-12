@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 여섯번째 문제 '나이 출력' 문제입니다.
 
-  ![프로그래머스 이미지](/assets/img/나이출력_01.png)
+  ![프로그래머스 이미지](https://spearboy.github.io/assets/img/나이출력_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -61,7 +61,7 @@ console.log(solution(10))
 
 이제 프로그래머스에서 결과를 확인해 보겠습니다.
 
-![프로그래머스 이미지](/assets/img/나이출력_02.png)
+![프로그래머스 이미지](https://spearboy.github.io/assets/img/나이출력_02.png)
 
 결과는 전부 불일치가 나왔습니다.   
 예상 답들이 전부 1씩 낮게 나왔네요. 원하는 답이 어떤식으로 나오는지 알았으니 코드를 수정해보겠습니다.
@@ -77,7 +77,7 @@ console.log(solution(10))
 매개변수에서 받아오는 값을 -1 해주었습니다.
 그럼 다시한번 제출해보도록 하겠습니다.
 
-![프로그래머스 이미지](/assets/img/나이출력_03.png)
+![프로그래머스 이미지](https://spearboy.github.io/assets/img/나이출력_03.png)
 
 성공이네요!
 

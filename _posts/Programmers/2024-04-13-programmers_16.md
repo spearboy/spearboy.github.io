@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 열여섯번째 문제 '배열 두배 만들기' 문제입니다.
 
-  ![프로그래머스 이미지](/assets/img/배열두배만들기_01.png)
+  ![프로그래머스 이미지](https://spearboy.github.io/assets/img/배열두배만들기_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -79,7 +79,7 @@ function solution(numbers) {
 ``` 
 제출용으로 정리한 코드는 위와 같습니다.
 
-![프로그래머스 이미지](/assets/img/배열두배만들기_02.png)
+![프로그래머스 이미지](https://spearboy.github.io/assets/img/배열두배만들기_02.png)
 
 성공이네요!
 
