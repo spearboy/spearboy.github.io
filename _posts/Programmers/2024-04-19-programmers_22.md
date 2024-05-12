@@ -3,7 +3,7 @@ layout: post
 title: 프로그래머스 LV1 "문자열을 정수로 바꾸기"
 date: 2024-04-19 19:56 +0900
 description: 
-image: ../../assets/img/programmers_logo.png
+image: ../assets/img/programmers_logo.png
 category: [programmers, Lv1]
 tags: code lv1 programmers javascript
 published: true

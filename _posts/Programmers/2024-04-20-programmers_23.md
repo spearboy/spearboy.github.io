@@ -3,7 +3,7 @@ layout: post
 title: 프로그래머스 LV1 "약수의 합"
 date: 2024-04-20 15:43 +0900
 description: 
-image: ../../assets/img/programmers_logo.png
+image: ../assets/img/programmers_logo.png
 category: [programmers, Lv1]
 tags: code lv1 programmers javascript
 published: true

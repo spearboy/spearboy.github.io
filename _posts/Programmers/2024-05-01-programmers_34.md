@@ -3,7 +3,7 @@ layout: post
 title: 프로그래머스 LV1 "같은 숫자는 싫어"
 date: 2024-05-01 21:51 +0900
 description: 
-image: ../../assets/img/programmers_logo.png
+image: ../assets/img/programmers_logo.png
 category: [programmers, Lv1]
 tags: code lv1 programmers javascript
 published: true

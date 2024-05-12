@@ -3,7 +3,7 @@ layout: post
 title: 프로그래머스 LV0 "피자 나눠 먹기 (1)"
 date: 2024-04-16 22:17 +0900
 description: 
-image: ../../assets/img/programmers_logo.png
+image: ../assets/img/programmers_logo.png
 category: [programmers, Lv0]
 tags: code lv0 programmers javascript
 published: true

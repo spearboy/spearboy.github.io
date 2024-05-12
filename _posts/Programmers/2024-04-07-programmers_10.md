@@ -3,7 +3,7 @@ layout: post
 title: 프로그래머스 LV0 "두 수의 나눗셈"
 date: 2024-04-07 22:30 +0900
 description: 
-image: ../../assets/img/programmers_logo.png
+image: ../assets/img/programmers_logo.png
 category: [programmers, Lv0]
 tags: code lv0 programmers javascript
 published: true

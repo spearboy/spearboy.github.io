@@ -3,7 +3,7 @@ layout: post
 title: 프로그래머스 LV0 "두 수의 차"
 date: 2024-03-29 09:44 +0900
 description: 
-image: ../../assets/img/programmers_logo.png
+image: ../assets/img/programmers_logo.png
 category: [programmers, Lv0]
 tags: code lv0 programmers javascript
 published: true

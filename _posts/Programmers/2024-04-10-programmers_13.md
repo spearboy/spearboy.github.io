@@ -3,7 +3,7 @@ layout: post
 title: 프로그래머스 LV0 "중복된 숫자 개수"
 date: 2024-04-10 10:54 +0900
 description: 
-image: ../../assets/img/programmers_logo.png
+image: ../assets/img/programmers_logo.png
 category: [programmers, Lv0]
 tags: code lv0 programmers javascript
 published: true

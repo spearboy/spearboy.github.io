@@ -3,7 +3,7 @@ layout: post
 title: 프로그래머스 LV1 "문자열 내림차순으로 배치하기"
 date: 2024-05-03 11:20 +0900
 description: 
-image: ../../assets/img/programmers_logo.png
+image: ../assets/img/programmers_logo.png
 category: [programmers, Lv1]
 tags: code lv1 programmers javascript
 published: true

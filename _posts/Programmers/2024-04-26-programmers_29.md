@@ -3,7 +3,7 @@ layout: post
 title: 프로그래머스 LV1 "수박수박수박수박수박수?"
 date: 2024-04-26 19:20 +0900
 description: 
-image: ../../assets/img/programmers_logo.png
+image: ../assets/img/programmers_logo.png
 category: [programmers, Lv1]
 tags: code lv1 programmers javascript
 published: true
