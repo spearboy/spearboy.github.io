@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 프로그래머스 LV1 "최댓값과 최솟값"
+title: 프로그래머스 LV2 "최댓값과 최솟값"
 date: 2024-05-08 23:12 +0900
 description: 
 image: ../assets/img/programmers_logo.png
