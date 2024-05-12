@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 열일곱번째 문제 '중앙값 구하기' 문제입니다.
 
-  ![프로그래머스 이미지](https://spearboy.github.io/assets/img/중앙값구하기_01.png)
+  ![프로그래머스 이미지](/assets/img/중앙값구하기_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -106,7 +106,7 @@ function solution(array) {
 저는 `mid`라는 변수안에 중간 값을 저장했습니다. 그리고 `mid`으로 `array`의 중간 `index`를 선택해 `answer`에 담아 출력해주었습니다.
 이제 코드가 완성 되었으니 한번 프로그래머스에서 결과를 확인해 보겠습니다.
 
-![프로그래머스 이미지](https://spearboy.github.io/assets/img/중앙값구하기_02.png)
+![프로그래머스 이미지](/assets/img/중앙값구하기_02.png)
 
 성공이네요!
 

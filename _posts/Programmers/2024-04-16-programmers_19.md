@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 열아홉번째 문제 '피자 나눠 먹기 (1)' 문제입니다.
 
-  ![프로그래머스 이미지](https://spearboy.github.io/assets/img/피자나눠먹기_01.png)
+  ![프로그래머스 이미지](/assets/img/피자나눠먹기_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -99,7 +99,7 @@ console.log(solution(15))
 
 그럼 이제 4번의 코드로 프로그래머스에서 결과를 확인해 보겠습니다.
 
-![프로그래머스 이미지](https://spearboy.github.io/assets/img/피자나눠먹기_02.png)
+![프로그래머스 이미지](/assets/img/피자나눠먹기_02.png)
 
 성공이네요!
 

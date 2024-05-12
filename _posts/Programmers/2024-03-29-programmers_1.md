@@ -19,7 +19,7 @@ sitemap: true
 
   우선 첫번째 시작은 '두 수의 차' 문제입니다.
 
-  ![프로그래머스 이미지](https://spearboy.github.io/assets/img/두수의차_01.png)
+  ![프로그래머스 이미지](/assets/img/두수의차_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -94,7 +94,7 @@ console.log(solution(1, 2))
 
 이제 이 코드를 [프로그래머스](https://programmers.co.kr/)에서 확인해보겠습니다.
 
-![프로그래머스 이미지](https://spearboy.github.io/assets/img/두수의차_02.png)
+![프로그래머스 이미지](/assets/img/두수의차_02.png)
 
 성공이네요!
 

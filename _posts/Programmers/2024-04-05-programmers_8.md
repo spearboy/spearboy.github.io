@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 여덟번째 문제 '배열의 평균값' 문제입니다.
 
-  ![프로그래머스 이미지](https://spearboy.github.io/assets/img/배열의평균값_01.png)
+  ![프로그래머스 이미지](/assets/img/배열의평균값_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -149,7 +149,7 @@ function solution(numbers) {
 ``` 
 제출용으로 정리한 코드는 위와 같습니다.
 
-![프로그래머스 이미지](https://spearboy.github.io/assets/img/배열의평균값_02.png)
+![프로그래머스 이미지](/assets/img/배열의평균값_02.png)
 
 성공이네요!
 

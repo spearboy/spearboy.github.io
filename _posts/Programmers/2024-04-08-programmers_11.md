@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 열한번째 문제 '짝수의 합' 문제입니다.
 
-  ![프로그래머스 이미지](https://spearboy.github.io/assets/img/짝수의합_01.png)
+  ![프로그래머스 이미지](/assets/img/짝수의합_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -106,7 +106,7 @@ function solution(n) {
 ``` 
 제출용으로 정리한 코드는 위와 같습니다.
 
-![프로그래머스 이미지](https://spearboy.github.io/assets/img/짝수의합_02.png)
+![프로그래머스 이미지](/assets/img/짝수의합_02.png)
 
 성공이네요!
 

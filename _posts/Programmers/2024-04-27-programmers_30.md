@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 LV1 열번째 문제 '두 정수 사이의 합' 문제입니다.
 
-  ![프로그래머스 이미지](https://spearboy.github.io/assets/img/두정수사이의합_01.png)
+  ![프로그래머스 이미지](/assets/img/두정수사이의합_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -119,7 +119,7 @@ function solution(a, b) {
 
 문제의 식이 완성되었으니 프로그래머스에 한번 확인해보겠습니다.
 
-![프로그래머스 이미지](https://spearboy.github.io/assets/img/두정수사이의합_02.png)
+![프로그래머스 이미지](/assets/img/두정수사이의합_02.png)
 
 성공이네요!
 
