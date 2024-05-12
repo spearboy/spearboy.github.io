@@ -6,8 +6,8 @@ description:
 image: ../assets/img/programmers_logo.png
 category: [programmers, Lv1]
 tags: code lv1 programmers javascript
-published: true
-sitemap: true
+published: false
+sitemap: false
 ---
 
 # 프로그래머스 Lv1 핸드폰 번호 가리기
