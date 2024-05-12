@@ -3,7 +3,7 @@ layout: post
 title: 프로그래머스 LV0 "몫 구하기"
 date: 2024-03-30 20:21 +0900
 description: 
-image: ../assets/img/programmers_logo.png
+image: ../../assets/img/programmers_logo.png
 category: [programmers, Lv0]
 tags: code lv0 programmers javascript
 published: true
@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 두번째 문제 '몫 구하기' 문제입니다.
 
-  ![프로그래머스 이미지](../assets/img/몫구하기_01.png)
+  ![프로그래머스 이미지](../../assets/img/몫구하기_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -59,7 +59,7 @@ console.log(solution(10, 5))
 
 나누기가 끝났으니 한번 제출해보도록 하겠습니다.
 
-![프로그래머스 이미지](../assets/img/몫구하기_02.png)
+![프로그래머스 이미지](../../assets/img/몫구하기_02.png)
 
 ?.... 오답이 나왔습니다. 문제가 뭔지 한번 알아보겠습니다.
 
@@ -118,7 +118,7 @@ console.log(solution(7, 2))
 문제에서 원하는 정수값만 나오게 되는 함수를 만들었으니
 이제 이 코드를 [프로그래머스](https://programmers.co.kr/)에서 확인해보겠습니다.
 
-![프로그래머스 이미지](../assets/img/몫구하기_03.png)
+![프로그래머스 이미지](../../assets/img/몫구하기_03.png)
 
 성공이네요!
 

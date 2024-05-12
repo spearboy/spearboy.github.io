@@ -3,7 +3,7 @@ layout: post
 title: 프로그래머스 LV0 "나머지 구하기"
 date: 2024-04-01 11:35 +0900
 description: 
-image: ../assets/img/programmers_logo.png
+image: ../../assets/img/programmers_logo.png
 category: [programmers, Lv0]
 tags: code lv0 programmers javascript
 published: true
@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 네번째 문제 '나머지 구하기' 문제입니다.
 
-  ![프로그래머스 이미지](../assets/img/나머지구하기_01.png)
+  ![프로그래머스 이미지](../../assets/img/나머지구하기_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -75,7 +75,7 @@ console.log(solution(8, 3))
 
 결과는 원하는대로 나왔으니 한번 제출해보도록 하겠습니다.
 
-![프로그래머스 이미지](../assets/img/나머지구하기_02.png)
+![프로그래머스 이미지](../../assets/img/나머지구하기_02.png)
 
 성공이네요!
 

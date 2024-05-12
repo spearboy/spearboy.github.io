@@ -3,7 +3,7 @@ layout: post
 title: 프로그래머스 LV1 "같은 숫자는 싫어"
 date: 2024-05-01 21:51 +0900
 description: 
-image: ../assets/img/programmers_logo.png
+image: ../../assets/img/programmers_logo.png
 category: [programmers, Lv1]
 tags: code lv1 programmers javascript
 published: true
@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 LV1 열네번째 문제 '같은 숫자는 싫어' 문제입니다.
 
-  ![프로그래머스 이미지](../assets/img/같은숫자는싫어_01.png)
+  ![프로그래머스 이미지](../../assets/img/같은숫자는싫어_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -135,7 +135,7 @@ function solution(arr)
 
 문제의 식이 완성되었으니 프로그래머스에 한번 확인해보겠습니다.
 
-![프로그래머스 이미지](../assets/img/같은숫자는싫어_02.png)
+![프로그래머스 이미지](../../assets/img/같은숫자는싫어_02.png)
 
 성공이네요!
 
