@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 LV1 여덟번째 문제 '정수 내림차순으로 배치하기' 문제입니다.
 
-  ![프로그래머스 이미지](/assets/img/post28_01.jpg)
+  ![프로그래머스 이미지](/assets/img/post28_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -137,7 +137,7 @@ function solution(n) {
 
 문제의 식이 완성되었으니 프로그래머스에 한번 확인해보겠습니다.
 
-![프로그래머스 이미지](/assets/img/post28_02.jpg)
+![프로그래머스 이미지](/assets/img/post28_02.png)
 
 성공이네요!
 

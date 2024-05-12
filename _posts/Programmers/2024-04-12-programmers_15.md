@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 열다섯번째 문제 '짝수 홀수 개수' 문제입니다.
 
-  ![프로그래머스 이미지](/assets/img/post15_01.jpg)
+  ![프로그래머스 이미지](/assets/img/post15_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -74,7 +74,7 @@ function solution(num_list) {
 ``` 
 이렇게 반복문을 만들어보았습니다. 반복문의 내용은 `num_list`의 길이만큼만 반복하는 루프입니다. 코드가 완성되었으니 한번 제출해보겠습니다.
 
-![프로그래머스 이미지](/assets/img/post15_02.jpg)
+![프로그래머스 이미지](/assets/img/post15_02.png)
 
 성공이네요!
 

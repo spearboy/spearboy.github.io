@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 네번째 문제 '나머지 구하기' 문제입니다.
 
-  ![프로그래머스 이미지](/assets/img/post04_01.jpg)
+  ![프로그래머스 이미지](/assets/img/post04_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -75,7 +75,7 @@ console.log(solution(8, 3))
 
 결과는 원하는대로 나왔으니 한번 제출해보도록 하겠습니다.
 
-![프로그래머스 이미지](/assets/img/post04_02.jpg)
+![프로그래머스 이미지](/assets/img/post04_02.png)
 
 성공이네요!
 

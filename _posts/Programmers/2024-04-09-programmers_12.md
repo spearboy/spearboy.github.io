@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 열두번째 문제 '각도기' 문제입니다.
 
-  ![프로그래머스 이미지](/assets/img/post12_01.jpg)
+  ![프로그래머스 이미지](/assets/img/post12_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -118,7 +118,7 @@ function solution(n) {
 ``` 
 제출용으로 정리한 코드는 위와 같습니다.
 
-![프로그래머스 이미지](/assets/img/post12_02.jpg)
+![프로그래머스 이미지](/assets/img/post12_02.png)
 
 성공이네요!
 

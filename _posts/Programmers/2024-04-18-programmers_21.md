@@ -21,7 +21,7 @@ sitemap: true
 
   오늘은 LV1 첫번째 문제 '문자열 내 p와 y의 개수' 문제입니다.
 
-  ![프로그래머스 이미지](/assets/img/post21_01.jpg)
+  ![프로그래머스 이미지](/assets/img/post21_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -146,7 +146,7 @@ function solution(s){
 
   그럼 코드가 완성 되었으니 한번 프로그래머스에서 결과를 확인해 보겠습니다.
 
-![프로그래머스 이미지](/assets/img/post21_02.jpg)
+![프로그래머스 이미지](/assets/img/post21_02.png)
 
 성공이네요!
 

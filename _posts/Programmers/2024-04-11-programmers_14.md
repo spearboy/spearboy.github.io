@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 열네번째 문제 '머쓱이보다 키 큰 사람' 문제입니다.
 
-  ![프로그래머스 이미지](/assets/img/post14_01.jpg)
+  ![프로그래머스 이미지](/assets/img/post14_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -129,7 +129,7 @@ function solution(array, height) {
 ``` 
 제출용으로 정리한 코드는 위와 같습니다.
 
-![프로그래머스 이미지](/assets/img/post14_02.jpg)
+![프로그래머스 이미지](/assets/img/post14_02.png)
 
 성공이네요!
 
