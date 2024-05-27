@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 프로그래머스 LV1 "나누어 떨어지는 숫자 배열"
-date: 2024-05-12 23:03 +0900
+date: 2024-05-17 23:03 +0900
 description: 
 image: ../assets/img/programmers_logo.png
 category: [programmers, Lv1]
