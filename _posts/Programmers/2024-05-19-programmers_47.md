@@ -1,143 +1,173 @@
 ---
 layout: post
-title: 프로그래머스 LV2 "최솟값 만들기"
-date: 2024-05-19 17:24 +0900
+title: PHPMailer를 사용해보자!
+date: 2024-05-19 23:13 +0900
 description: 
-image: ../assets/img/programmers_logo.png
-category: [programmers, Lv2]
-tags: code lv2 programmers javascript
-published: false
-sitemap: false
+image:
+category: [PHP, Lv2]
+tags: code PHP
+published: true
+sitemap: true
 ---
 
-# 프로그래머스 Lv2 최솟값 만들기
+# PHPMailer를 사용해보자!
 
-  기초부터 다시 공부를 하기위해 [프로그래머스](https://programmers.co.kr/) 라는 사이트에서
-  코딩테스트를 LV0 부터 가능한곳까지 못하는곳은 레퍼런스를 찾아가며 풀어보려고 합니다.
+안녕하세요 오늘은 제가 사용했던 php의 `PHPMailer`의 사용법을 한번 알아보겠습니다.
 
-  매일 1개의 풀이를 하고 그 풀이에대한 나의 생각 및 해석을 적어보려합니다.
+다운로드 링크는 [PHPMailer](https://github.com/PHPMailer/PHPMailer)입니다.
 
-  오늘은 LV2 네번째 문제 '숫자의 표현' 문제입니다.
+## PHPMailer?
 
-  ![프로그래머스 이미지](/assets/img//post44_01.png)
+PHPMailer는 PHP로 이메일을 전송하는 데 사용되는 오픈 소스 라이브러리입니다. 이 라이브러리는 SMTP(Simple Mail Transfer Protocol)를 통해 이메일을 쉽게 보내는 기능을 제공합니다. PHP의 기본 mail() 함수보다 더 강력하고 유연한 기능을 제공하여 이메일 전송 작업을 단순화하고 향상시켜 줍니다.
 
-  위 이미지가 프로그래머스 코딩문제입니다.
-  
-  문제는 매개변수로 여러개의 정수가 담겨있고 길이가 같은 배열의 형태의 `A`와 `B`를 입력받아, 두 배열에서 나올 수 있는 최소값을 출력하는 문제입니다.
+### 주요 특징
 
-  프로그래머스의 설명을 보면 저는 이해가 가지 않았습니다. 제가 이해한 대로 문제를 다시 설명 드려보겠습니다.
+1. SMTP 지원: PHPMailer는 SMTP를 사용하여 이메일을 전송할 수 있습니다. 이는 이메일 전송의 신뢰성과 보안성을 높이는 데 도움이 됩니다.
+2. HTML 이메일: HTML 형식의 이메일을 쉽게 작성하고 보낼 수 있습니다. 이를 통해 스타일링된 이메일을 만들 수 있습니다.
+3. 첨부 파일: 이메일에 파일을 첨부할 수 있습니다. 여러 파일도 쉽게 첨부 가능합니다.
+4. 인증 지원: SMTP 인증을 통해 보안이 강화된 이메일 전송을 할 수 있습니다.
+5. 다국어 지원: 여러 언어로 오류 메시지와 알림을 제공하여 국제적인 사용이 가능합니다.
+6. 디버깅: 이메일 전송 과정에서 발생하는 문제를 쉽게 추적하고 해결할 수 있도록 디버그 기능을 제공합니다.
 
-  1. 매개변수로 들어오는 배열은 길이가 같습니다.
+### 사용 이유
 
-  2. 각 배열의 값을 1개씩만 골라서 곱해줍니다.
+1. 단순함: 이메일 전송을 위한 복잡한 코드를 간단하게 만들어 줍니다.
+2. 유연성: 다양한 이메일 전송 옵션을 제공하여 다양한 요구사항에 맞출 수 있습니다.
+3. 보안성: SMTP 인증과 같은 보안 기능을 쉽게 구현할 수 있어 보안성이 높습니다.
+4. 기능성: HTML 이메일, 첨부 파일 등 고급 기능을 지원하여 다양한 이메일 형식을 보낼 수 있습니다.
+5. 커뮤니티와 문서: 잘 정리된 문서와 활발한 커뮤니티가 있어 문제 해결이 용이합니다.
 
-  3. 각 배열의 값을 1개씩만 골라서 곱한 값을 모두 합쳐 줍니다.
+PHPMailer는 이러한 이유들로 인해 PHP 개발자들이 이메일 기능을 구현할 때 많이 사용하는 도구입니다.
 
-  이런 과정을 실행해야하는 문제 입니다. 다만 조건은 1번 고른 배열의 값은 다시 쓸 수 없으며
-  2개의 배열에서 나올 수 있는 최소값을 구해야합니다.
+이렇게 `PHPMailer`가 무엇인지 알아보았으니 예제 코드를 이용해 본격적으로 `PHPMailer`를 사용해보겠습니다.
 
-  예를 들어 `A`배열은 `[1,5]`, `B`배열은 `[2,5]`일때
-  최소값이 나오려면 1과 5를 곱하고 5와 2를 곱해야 최소값이 나올 수 있습니다.
+## PHPMailer 예제 코드
 
-  이렇게 문제의 핵심을 알아 보았습니다.
+```php
+require '../PHPMailer/src/Exception.php';
+require '../PHPMailer/src/PHPMailer.php';
+require '../PHPMailer/src/SMTP.php';
 
-  그럼 오늘의 문제를 한번 풀어보겠습니다.
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-  기본 세팅 코드도 알아보겠습니다.
+// Sample data for demonstration
+$userEmail = 'user@example.com';
+$userName = 'John Doe';
 
-```javascript
-function solution(A,B){
-    var answer = 0;
+date_default_timezone_set('Asia/Seoul');
 
-    console.log('Hello Javascript')
+$mail = new PHPMailer;
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'smtp.server.com'; // Specify main and backup SMTP servers
+$mail->Port = 465; // TCP port to connect to
+$mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = 'account'; // SMTP username
+$mail->Password = 'password'; // SMTP password
+$mail->setFrom('tsagaanaa123@naver.com', 'picker'); // Sender's email address and name
+$mail->addReplyTo('picker@pickstom.com', 'picker'); // Reply-to address
+$mail->addAddress($userEmail, $userName); // Add a recipient
 
-    return answer;
+$mail->Subject = 'OOO님께'; // Email subject
+$mail->CharSet = 'UTF-8'; // Character set
+$mail->msgHTML("<html><body>안녕하세요 저는 OOO입니다.</body></html>"); // HTML message body
+$mail->AltBody = "안녕하세요 저는 OOO입니다."; // Plain text body for non-HTML email clients
+
+if (!$mail->send()) {
+  echo 'Mailer Error: ' . $mail->ErrorInfo; // Display error message if email fails to send
+} else {
+  echo 'Message sent successfully!'; // Display success message if email is sent
 }
 ```
 
-기본 세팅 코드는 매개변수 `A`와 `B`가 입력되고 함수 안에는 `answer`이라는 변수가 선언되어 리턴하는 간단한 기본 세팅 코드입니다.
+### 상세 설명
 
-이번 문제에서 결국 해야하는 작업은 한 배열은 오름차순, 한 배열은 내림차순으로 변경해 곱하기 작업을 해야 최소값이 나올 수 있는것 입니다.
+1. `PHPMailer` 포함 및 사용 선언
 
-그럼 저희가 이번에 사용해야하는것은 `sort()`메서드와 각 배열의 값에 대한 작업을 위해 반복문인 `for()`문을 사용하도록 하겠습니다.
+```php
+require '../PHPMailer/src/Exception.php';
+require '../PHPMailer/src/PHPMailer.php';
+require '../PHPMailer/src/SMTP.php';
 
-혹시 기억이 안나실 수 있으니 `sort()`에 대해서 다시 한번 정리하고 문제의 답을 알아보겠습니다.
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+```
 
-### sort() 
-`sort()`는 JavaScript 배열을 정렬하는 함수입니다. 숫자 배열의 경우 `sort((a, b) => a - b)`와 같이 사용하여 오름차순으로 정렬할 수 있고, 문자열 배열의 경우는 그냥 `sort()`를 호출하면 알파벳순으로 정렬됩니다.
+`PHPMailer`를 포함하고 사용할 수 있도록 네임스페이스를 선언합니다.
 
-+ 예시 : 숫자 정렬(오름차순)
-  + ```javascript
-      let test = [6,4,7,1,5,2];
-      test.sort((a,b) => a - b);
-      // 결과 [1,2,4,5,6,7]
-    ```
+2. 샘플 데이터 설정
 
-+ 예시 : 숫자 정렬(내림차순)
-  + ```javascript
-      let test = [6,4,7,1,5,2];
-      test.sort((a,b) => b - a);
-      // 결과 [7,6,5,4,2,1]
-    ```
-이렇게 숫자의 경우 이런 형태의 정렬이 실행됩니다.
+```php
+$userEmail = 'user@example.com';
+$userName = 'John Doe';
+$randomCode = 'ABC123';
+```
 
-이번에는 문자열의 `sort()`입니다.
+이메일 전송을 테스트하기 위해 샘플 데이터를 설정합니다.
 
-+ 예시 : 문자 정렬(오름차순)
-  + ```javascript
-      let test = ['apple','car','ball'];
-      test.sort();
-      // 결과 ['apple','ball','car']
-    ```
+3. 타임존 설정
 
-+ 예시 : 숫자 정렬(내림차순)
-  + ```javascript
-      let test = ['apple','car','ball'];
-      test.sort().reverse();
-      // 결과 ['car','ball','apple']
-    ```
-문자열의 경우 오름차순은 그냥 메서드를 호출하면 정렬이 됩니다.
-반대로 내림차순의 경우에는 `reverse()`메서드를 사용하지만 오늘은 `reverse()`메서드에 대해서는 설명하지 않고 다음에 다시 포스팅 하겠습니다.
+```php
+date_default_timezone_set('Asia/Seoul');
+```
 
-이렇게 정렬하는 메서드인 `sort()`를 복습해보았습니다.
+PHP 스크립트의 기본 타임존을 설정합니다.
 
-그럼 코드의 결과를 한번 작성해 보겠습니다.
+4. PHPMailer 객체 생성 및 설정
 
-```javascript
-function solution(A,B){
-    var answer = 0;
-    var aArray = A.sort((a,b)=> a-b)
-    var bArray = B.sort((a,b)=> b-a)
-    for(i=0;i<aArray.length;i++){
-        answer += aArray[i] * bArray[i]
-    }
-    return answer;
+```php
+$mail = new PHPMailer;
+$mail->isSMTP(); // Set mailer to use SMTP
+$mail->Host = 'smtp.server.com'; // Specify main and backup SMTP servers
+$mail->Port = 465; // TCP port to connect to
+$mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
+$mail->SMTPAuth = true; // Enable SMTP authentication
+$mail->Username = 'account'; // SMTP username
+$mail->Password = 'password'; // SMTP password
+$mail->setFrom('tsagaanaa123@naver.com', 'picker'); // Sender's email address and name
+$mail->addReplyTo('picker@pickstom.com', 'picker'); // Reply-to address
+$mail->addAddress($userEmail, $userName); // Add a recipient
+```
+
+- `new PHPMailer`로 `PHPMailer` 객체를 생성합니다.
+- `isSMTP()`를 사용하여 `SMTP`를 사용하도록 설정합니다.
+- `Host` 속성에 `SMTP` 서버 주소를 지정합니다.
+- `Port` 속성에 포트 번호를 설정합니다.
+- `SMTPSecure` 속성에 `SSL`을 사용하도록 설정합니다.
+- `SMTPAuth` 속성에 `SMTP` 인증을 사용하도록 설정합니다.
+- `Username` 및 `Password` 속성에 `SMTP` 서버의 로그인 자격 증명을 설정합니다.
+- `setFrom` 메서드로 보낸 사람의 이메일 주소와 이름을 설정합니다.
+- `addReplyTo` 메서드로 회신 이메일 주소를 설정합니다.
+- `addAddress` 메서드로 수신자의 이메일 주소와 이름을 설정합니다.
+
+5. 이메일 내용 설정
+
+```php
+$mail->Subject = 'OOO님께'; // Email subject
+$mail->CharSet = 'UTF-8'; // Character set
+$mail->msgHTML("<html><body>안녕하세요 저는 OOO입니다.</body></html>"); // HTML message body
+$mail->AltBody = "안녕하세요 저는 OOO입니다."; // Plain text body for non-HTML email clients
+```
+
+- `Subject` 속성에 이메일 제목을 설정합니다.
+- `CharSet` 속성에 문자 인코딩을 설정합니다.
+- `msgHTML` 메서드로 `HTML` 형식의 이메일 본문을 설정합니다.
+- `AltBody` 속성에 `HTML`을 지원하지 않는 클라이언트를 위한 텍스트 형식의 이메일 본문을 설정합니다.
+
+6. 이메일 전송 및 결과 처리
+
+```php
+if (!$mail->send()) {
+  echo 'Mailer Error: ' . $mail->ErrorInfo; // Display error message if email fails to send
+} else {
+  echo 'Message sent successfully!'; // Display success message if email is sent
 }
 ```
-위 코드의 간단한 설명을 알려드리겠습니다.
 
-1. answer 변수를 0으로 초기화합니다. 이 변수는 가능한 경우의 수를 저장합니다.
+- `send` 메서드를 사용하여 이메일을 전송합니다.
+- 전송에 실패하면 오류 메시지를 출력하고, 성공하면 성공 메시지를 출력합니다.
 
-2. 바깥쪽 for 루프에서는 i를 1부터 n까지 증가시키며 시작 숫자로 사용합니다.
+이렇게 예제를 상세하게 한번 알아보았습니다.
 
-3. 안쪽 for 루프에서는 현재의 시작 숫자(i)부터 n까지 증가시키며 합(sum)을 구합니다.
-
-4. 만약 sum이 n과 같다면, 연속된 자연수들의 합으로 n을 만들 수 있으므로 answer를 증가시킵니다.
-
-5. sum이 n을 초과하면 현재 시작 숫자(i)로는 n을 만들 수 없으므로 안쪽 루프를 종료합니다.
-
-6. 바깥쪽 루프를 계속 진행하여 모든 가능한 경우의 수를 확인합니다.
-
-7. 마지막으로 계산된 answer를 반환합니다.
-
-그럼 문제의 식이 완성되었으니 프로그래머스에 한번 확인해보겠습니다.
-
-![프로그래머스 이미지](/assets/img//post44_02.png)
-
-성공이네요!
-
-오늘은 [프로그래머스](https://programmers.co.kr/) LV2 '최솟값 만들기' 문제의 대해서 알아봤습니다.
-
-제 방법이 꼭 정답은 아니니 그저 이런방법도 있구나하고 참고용으로만 봐주시면 감사하겠습니다.
-
-감사합니다.
+도움이 되셨다면 댓글한번씩만 달아주세요!
