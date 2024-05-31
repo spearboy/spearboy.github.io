@@ -4,7 +4,7 @@ title: PHPMailer를 사용해보자!
 date: 2024-05-19 23:13 +0900
 description: 
 image:
-category: [PHP, Lv2]
+category: [PHP]
 tags: code PHP
 published: true
 sitemap: true
