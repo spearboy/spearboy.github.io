@@ -1,10 +1,10 @@
 ---
 layout: post
 title: scroll
-date: 2024-06-02 21:28 +0900
+date: 2024-06-02 12:27 +0900
 description: 
 image: ../assets/img/css_fun.gif
-category: [css]
+category: [code, css]
 tags: code css scroll
 published: true
 sitemap: true
