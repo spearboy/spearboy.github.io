@@ -52,3 +52,4 @@ CSS Scroll Snap은 갤러리, 이미지 슬라이더, 캐러셀 및 페이지 �
   scroll snap (scroll css)</a> by alex (<a href="https://codepen.io/_Babo_">@_Babo_</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
