@@ -47,9 +47,8 @@ CSS Scroll Snap은 갤러리, 이미지 슬라이더, 캐러셀 및 페이지 �
 
 위 설명처럼 꼭 js으로 스크롤 위치값과 잡다한 값 등등을 구하고 비교하지 않아도 또 특별한 라이브러리를 사용하지 않아도 스크롤 기능을 구현할 수 있다니 매력적이지 않을 수 없습니다! 그럼 제 코드펜에서 예제를 확인해 보겠습니다.
 
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="gOJmjNL" data-pen-title="scroll snap (scroll css)" data-user="_Babo_" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-  <span>See the Pen <a href="https://codepen.io/_Babo_/pen/gOJmjNL">
+<iframe height="300" style="width: 100%;" scrolling="no" title="scroll snap (scroll css)" src="https://codepen.io/_Babo_/embed/gOJmjNL?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/_Babo_/pen/gOJmjNL">
   scroll snap (scroll css)</a> by alex (<a href="https://codepen.io/_Babo_">@_Babo_</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+  on <a href="https://codepen.io">CodePen</a>.
+</iframe>
