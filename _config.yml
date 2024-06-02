@@ -115,6 +115,8 @@ collections:
   tabs:
     output: true
     sort_by: order
+    
+codepen_username: _Babo_
 
 defaults:
   - scope:
