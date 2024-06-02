@@ -105,8 +105,6 @@ CSS animation-timeline에서 사용되는 `scroll()` 및 `view()` 함수는 `CSS
 
 하지만 위코드는 그런 계산이 필요가 없습니다. 그냥 애니메이션 안에서 설정만 해주면 끝입니다.
 
-
-
 그럼 다음으로 `view()` 를 한번 알아보겠습니다.
 
 <iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/_Babo_/embed/RwOEYxp?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
@@ -118,6 +116,12 @@ CSS animation-timeline에서 사용되는 `scroll()` 및 `view()` 함수는 `CSS
 위 코드는 **뷰포트**를 감지하여 애니메이션을 **트리거**하는 코드입니다.
 
 위 코드처럼 만드는것도 쉽겠지만 보시는바와 같이 css 하나로 이렇게 구현이 된다면 제 생각은 불필요한 js를 더 줄일 수 있겠다 라는 생각이 들더라구요.
+
+하지만 위 코드들을 프로젝트에 활용하시려면 호환성 체크를 해주셔야합니다. 아직 크롬엔진을 기반으로 사용하는 브라우저에서만 사용이 가능하더군요...
+
+~~사용하려면 지옥의 크로스브라우징~~
+
+오늘 포스팅 외 `CSS`관련 사항은 [MDN-CSS](https://developer.mozilla.org/ko/docs/Web/CSS)에서 확인 가능합니다.
 
 오늘은 간단하게 `scroll`으로 작동할 수 있는 `css animation` 을 알아보았습니다. 
 
