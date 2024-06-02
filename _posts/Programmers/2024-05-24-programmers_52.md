@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 프로그래머스 LV2 "피보나치 수"
-date: 2024-05-22 21:28 +0900
+date: 2024-05-24 11:58 +0900
 description: 
 image: ../assets/img/programmers_logo.png
 category: [programmers, Lv2]
@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 LV2 문제 '피보나치 수' 문제입니다.
 
-  ![프로그래머스 이미지](/assets/img//post52_01.png)
+  ![프로그래머스 이미지](/assets/img/post52_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -90,7 +90,7 @@ function solution(n) {
 
 그럼 코드를 [프로그래머스](https://programmers.co.kr/)에 한번 확인해보겠습니다.
 
-![프로그래머스 이미지](/assets/img//post52_02.png)
+![프로그래머스 이미지](/assets/img/post52_02.png)
 
 성공이네요!
 

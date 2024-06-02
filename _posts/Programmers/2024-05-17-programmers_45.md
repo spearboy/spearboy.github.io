@@ -24,7 +24,7 @@ sitemap: true
 
   우선 문제를 바로 풀러 가보겠습니다.
 
-  ![프로그래머스 이미지](/assets/img//post45_01.png)
+  ![프로그래머스 이미지](/assets/img/post45_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -77,7 +77,7 @@ function solution(arr, divisor) {
 
 그럼 문제의 식이 완성되었으니 프로그래머스에 한번 확인해보겠습니다.
 
-![프로그래머스 이미지](/assets/img//post45_02.png)
+![프로그래머스 이미지](/assets/img/post45_02.png)
 
 성공이네요!
 
