@@ -3,7 +3,7 @@ layout: post
 title: 오직 css만으로 스크롤 애니메이션을 만들어보자
 date: 2024-06-02 12:27 +0900
 description: 
-image: ../assets/img/css_fun.gif
+image: 
 category: [code, css]
 tags: code css scroll
 published: true
@@ -11,6 +11,8 @@ sitemap: true
 ---
 
 # 오직 css만으로 스크롤 애니메이션을 만들어보자
+
+![프로그래머스 이미지](/assets/img/css_fun.gif)
 
 오늘은 최근 제가 알게된 좀 좋은? 무튼 스크롤과 관련된 신규 css속성을 소개해 드려볼까 합니다.
 
