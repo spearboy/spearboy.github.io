@@ -6,8 +6,8 @@ description:
 image: ../assets/img/programmers_logo.png
 category: [programmers, Lv2]
 tags: code lv2 programmers javascript
-published: false
-sitemap: false
+published: true
+sitemap: true
 ---
 
 # 프로그래머스 LV2 N개의 최소공배수
