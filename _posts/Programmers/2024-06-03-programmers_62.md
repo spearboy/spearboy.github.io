@@ -19,7 +19,7 @@ sitemap: true
 
   오늘은 LV2 문제 '짝지어 제거하기' 문제입니다.
 
-  ![프로그래머스 이미지](/assets/img/post62_01.png)
+  ![프로그래머스 이미지](/assets/img/post56_01.png)
 
   위 이미지가 프로그래머스 코딩문제입니다.
   
@@ -78,7 +78,7 @@ function solution(s) {
 그럼 코드를 [프로그래머스](https://programmers.co.kr/)에 한번 확인해보겠습니다.
 
 
-![프로그래머스 이미지](/assets/img/post62_02.png)
+![프로그래머스 이미지](/assets/img/post56_02.png)
 
 성공이네요!
 
